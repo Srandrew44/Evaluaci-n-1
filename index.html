@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CharlieCars</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/jpg" href="img/Logo.png">
+
+    <style>
+      * {
+        scrollbar-color: #b99f48 black !important;
+        scrollbar-width: thin;
+      }
+      .c-item {
+        height: 480px;
+      }
+
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+      }
+
+      .dropdown-item:hover {
+        background-color: #ffc107;
+        color: black !important;
+      }
+
+      .footer-container{
+        background-color: black;
+        border-top: 1px solid darkgrey;
+      }
+      .lista-a:hover{
+        color: #ffc107 !important;
+      }
+
+      .h5-container{
+        width: 65%;
+      }
+
+      .h5-hov:hover{
+        color: #ffc107 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      id="navbar-inicio"
+      class="navbar navbar-light navbar-expand-lg bg-black"
+    >
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="img/Logo.png" alt="Logo" width="47px" height="35px">
+        </a>
+        <a class="navbar-brand text-white d-sm" href="index.html">CharlieCars</a>
+        <button
+          class="navbar-toggler bg-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+              class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Modelos
+              </a>
+              <ul class="dropdown-menu bg-black">
+                <li>
+                  <a class="dropdown-item text-white" href="#">Mercedes-Benz</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Audi</a>
+                </li>
+                <li><hr class="dropdown-divider bg-secondary" /></li>
+                <li>
+                  <a class="dropdown-item text-white" href="catalago.html"
+                    >Ver Nuesto Catálogo</a
+                  >
+                </li>
+              </ul>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-white" href="catalago.html">Cotiza Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark text-white" href="#">Accesorios</a>
+              </li>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="inicio-sesion.html" class="btn btn-outline-warning me-2"
+            >Iniciar Sesión</a
+            >
+            <a href="registro.html" class="btn btn-outline-warning"
+              >Registrarse</a
+            >
+            <a href="carrito.html"
+              ><img
+                class="mx-2"
+                src="img/shopping-cart.png"
+                alt="carrito de compras"
+                height="37"
+            /></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <section id="carousel-imagenes">
+      <div
+        id="carouselContainer"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselContainer"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselContainer"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselContainer"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item c-item active" data-bs-interval="10000">
+            <img
+              src="img/img-1.jpg"
+              class="d-block w-100 c-img"
+              alt="Foto de auto 1"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">
+                Tu Sueño sobre Ruedas
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                comienza aquí
+              </h1>
+              <button class="btn btn-warning px-4 py-2 mt-4 fs-5">
+                <a href="catalago.html" style="color: black; text-decoration: none;">Revisar Catálogo</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="img/img-2.jpg"
+              class="d-block w-100 c-img"
+              alt="Foto de auto 2"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">
+                Tu Sueño sobre Ruedas
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                comienza aquí
+              </h1>
+              <button type="button" class="btn btn-warning px-4 py-2 mt-4 fs-5">
+                <a href="catalago.html" style="color: black; text-decoration: none;">Revisar Catálogo</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="img/img-4.webp"
+              class="d-block w-100 c-img"
+              alt="Foto de auto 3"
+            />
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">
+                Tu Sueño sobre Ruedas
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                comienza aquí
+              </h1>
+              <button class="btn btn-warning px-4 py-2 mt-4 fs-5">
+                <a href="catalago.html" style="color: black; text-decoration: none;">Revisar Catálogo</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselContainer"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselContainer"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- card -->
+    <section id="cards">
+      <div class="row justify-content-evenly me-0 bg-black">
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/RollsRoyce.png"
+            class="card-img-top rounded"
+            alt="RollsRoyce"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">Rolls-Royce</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate nam, amet nulla quas quo dignissimos illum magni ut at
+              quae!
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/AUDI.PNG"
+            class="card-img-top rounded"
+            alt="Audi"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">Audi</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              expedita magni eius sequi odio illum ipsa quo perspiciatis dolorum
+              aliquam.
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/Tesla.png"
+            class="card-img-top rounded"
+            alt="Tesla"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">Tesla</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              dicta mollitia eligendi qui ipsum. Omnis dicta necessitatibus
+              aliquam corrupti adipisci.
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly me-0 bg-black">
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/g wagon.avif"
+            class="card-img-top rounded"
+            alt="MercedesBenz"
+            height="153px"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">Mercedes-Benz</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate nam, amet nulla quas quo dignissimos illum magni ut at
+              quae!
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/BMW.webp"
+            class="card-img-top rounded"
+            alt="BMW"
+            height="153px"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">BMW</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              expedita magni eius sequi odio illum ipsa quo perspiciatis dolorum
+              aliquam.
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+        <div
+          class="card co-4 mt-4 mb-4 bg-black border-warning pt-2"
+          style="width: 18rem"
+        >
+          <img
+            src="img/img-autos/lexus.png"
+            class="card-img-top rounded"
+            alt="Lexus"
+          />
+          <div class="card-body">
+            <div class="h5-container">
+              <h5 class="card-title text-secondary h5-hov">Lexus</h5>
+            </div>
+            <p class="card-text text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              dicta mollitia eligendi qui ipsum. Omnis dicta necessitatibus
+              aliquam corrupti adipisci.
+            </p>
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más</a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- footer -->
+    <div class="footer-container">
+      <div class="container bg-black px-5">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0">
+          
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="img/Logo.png" alt="Logo" width="55px" height="37px">
+          </a>
+          <p class="text-secondary">© 2023-2024 CharlieCars Corp.</p>
+        </div>
+        <div class="col mb-3">
+          
+        </div>         
+        <div class="col mb-3">
+          <h5 class="text-warning">Marcas</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Aston Martin</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Cadillac</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Maserati</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Mini</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Porsche</a></li>
+          </ul>
+        </div>    
+        <div class="col mb-3">
+          <h5 class="text-warning">¿Necesitas Ayuda?</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Preguntas Frecuentes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Reclamos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Agendar Mantención</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguros</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Canal de denuncias</a></li>
+          </ul>
+        </div>    
+        <div class="col mb-2">
+          <h5 class="text-warning">Nosotros</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Historia</a></li>
+            <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguridad</a></li>
+            <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Noticias</a></li>
+            <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Contacto</a></li>
+            <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-black">
+      <div class="modal-header border-secondary">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">AVISO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-white">
+        Lo sentimos, página aún en desarrollo. 
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
