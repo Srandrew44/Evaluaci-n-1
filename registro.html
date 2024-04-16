@@ -28,6 +28,10 @@
       .no-shadow {
         box-shadow: none !important;
       }
+      .footer-container{
+        background-color: black;
+        border-top: 1px solid darkgrey;
+      }
     </style>
   </head>
   <body class="bg-black">
@@ -174,45 +178,53 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <p class="col-md-4 mb-0 text-secondary">
-          © 2023-2024 CharlieCars Corp.
-        </p>
-
-        <a
-          href="index.html"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <img src="img/Logo.png" alt="Logo" width=61px" height="41px" />
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-secondary lista-a"
-              >Inicio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-secondary lista-a"
-              >Privacidad</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-secondary lista-a"
-              >Contacto</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-secondary lista-a"
-              >Términos y Condiciones</a
-            >
-          </li>
-        </ul>
-      </footer>
-    </div>
+        <!-- footer -->
+        <div class="footer-container">
+          <div class="container bg-black px-5">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0">
+              
+            <div class="col mb-3">
+              <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <img src="img/Logo.png" alt="Logo" width="55px" height="37px">
+              </a>
+              <p class="text-secondary">© 2023-2024 CharlieCars Corp.</p>
+            </div>
+            <div class="col mb-3">
+              
+            </div>         
+            <div class="col mb-3">
+              <h5 class="text-warning">Marcas</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Aston Martin</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Cadillac</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Maserati</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Mini</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Porsche</a></li>
+              </ul>
+            </div>    
+            <div class="col mb-3">
+              <h5 class="text-warning">¿Necesitas Ayuda?</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Preguntas Frecuentes</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Reclamos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Agendar Mantención</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguros</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Canal de denuncias</a></li>
+              </ul>
+            </div>    
+            <div class="col mb-2">
+              <h5 class="text-warning">Nosotros</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Historia</a></li>
+                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguridad</a></li>
+                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Noticias</a></li>
+                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Contacto</a></li>
+                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Términos y Condiciones</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
 
     <div
       class="modal fade"
@@ -241,7 +253,7 @@
               class="btn btn-warning"
               data-bs-dismiss="modal"
             >
-              Cerrar
+              <a href="index.html"class="text-dark" style="text-decoration: none;">Cerrar</a>
             </button>
           </div>
         </div>
