@@ -26,6 +26,11 @@
       .lista-a:hover{
         color: #ffc107 !important;
       }    
+
+      .footer-container{
+        background-color: black;
+        border-top: 1px solid darkgrey;
+      }
     </style>
   </head>
   <body class="bg-black">
@@ -98,278 +103,228 @@
       </div>
     </nav>
     
-    <!--Filtro-->
     <h1 class="text-center display-5 text-white mt-5 pb-5">Mira, conoce y compara todos los vehículos</h1>
-      <div class="row justify-content-start mx-0 ps-5" style="margin-left: 40px;">
-        <div class="col-3 md-3 mt-4 md-4">
-          <h5 class="text-warning text-uppercase">Filtro de búsqueda</h5>
-          <br>
-          <select class="form-select mb-4 text-white bg-black border-0" aria-label="Default select example">
-            <option selected>Modelo</option>
-            <option value="op1">Todos</option>
-          </select>
-          <select class="form-select mb-4 text-white bg-black border-0" aria-label="Default select example">
-            <option selected>Año desde</option>
-            <option value="op1">desde 2024</option>
-            <option value="op1">desde 2023</option>
-            <option value="op1">desde 2022</option>
-            <option value="op1">desde 2021</option>
-            <option value="op1">desde 2020</option>
-            <option value="op1">desde 2019</option>
-            <option value="op1">desde 2018</option>
-          </select>
-          <select class="form-select mb-4 text-white bg-black border-0" aria-label="Default select example">
-            <option selected>Año hasta</option>
-            <option value="op1">desde 2024</option>
-            <option value="op1">desde 2023</option>
-            <option value="op1">desde 2022</option>
-            <option value="op1">desde 2021</option>
-            <option value="op1">desde 2020</option>
-            <option value="op1">desde 2019</option>
-            <option value="op1">desde 2018</option>
-          </select>
-          <select class="form-select mb-4 text-white bg-black border-0" aria-label="Default select example">
-            <option selected>Precio desde</option>
-            <option value="op1">desde $3.000.000</option>
-            <option value="op1">desde $6.000.000</option>
-            <option value="op1">desde $9.000.000</option>
-            <option value="op1">desde $12.000.000</option>
-            <option value="op1">desde $15.000.000</option>
-            <option value="op1">desde $18.000.000</option>
-            <option value="op1">desde $21.000.000</option>
-          </select>
-          <select class="form-select text-white bg-black border-0" aria-label="Default select example">
-            <option selected>Precio hasta</option>
-            <option value="op1">Hasta $3.000.000</option>
-            <option value="op1">Hasta $9.000.000</option>
-            <option value="op1">Hasta $18.000.000</option>
-            <option value="op1">Hasta $25.000.000</option>
-            <option value="op1">Hasta $80.000.000</option>
-            <option value="op1">Hasta $120.000.000</option>
-            <option value="op1">Hasta $150.000.000</option>
-          </select>
-          </div>
-          <!--Catalogo-->
-          <div class="col-md-9 ps-5">
-            <section id="cards">
-              <div class="row justify-content-evenly me-0 bg-black">
-                <div class="col-md-5">
-                  <div>
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/Cadillac Escalade.png" class="card-img-top rounded" alt="Cadillac Escalade" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <div class="h5-container">
-                          <h5 class="card-title text-secondary h5-hov"><small>Cadillac Escalade</small></h5>
-                          <p class="card-text text-white d-flex justify-content-center">Desde $140.000.000</p>
-                          <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                    <img src="img/img-autos-catalogo/AUDI.PNG" class="card-img-top rounded" alt="Audi RS7" style="width: 96%; height: 80%; margin: 5px;">
-                    <div class="card-body">
-                      <h5 class="card-title text-secondary h5-hov"> <small>Audi RS7</small></h5>
-                      <p class="card-text text-white d-flex justify-content-center">Desde $114.000.000</p>
-                      <div class="d-flex justify-content-center">
-                        <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/g wagon.avif" class="card-img-top rounded" alt="Mercedes G Wagon" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Mercedes G Wagon</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $210.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/lexus1.png" class="card-img-top rounded" alt="..." style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Lexus LC500</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $95.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/maserati1.png" class="card-img-top rounded" alt="Maserati Grant-Turismo" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Maserati Grant-Turismo</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $238.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/RollsRoyce1.png" class="card-img-top rounded" alt="RollsRoyce Phantom" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov">RollsRoyce Phantom</h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $627.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/Tesla1.png" class="card-img-top rounded" alt="Tesla Model S" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Tesla Model S</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $90.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/BMW1.jpg" class="card-img-top rounded" alt="BMW M8 Competition" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>BMW M8 Competition</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $57.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/Porsche.png" class="card-img-top rounded" alt="Porsche 911 gt3 rs" style="width: 96%; height: 90%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Porsche 911 gt3 rs</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $305.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/AstonMartin1.png" class="card-img-top rounded" alt="AstonMartin db12 vantage" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>AstonMartin db12 vantage</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $124.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/mini1.png" class="card-img-top rounded" alt="Mini Jhon Cooper Works" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Mini Jhon Cooper Works</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde  $41.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
-                      <img src="img/img-autos-catalogo/AMG-GTR.png" class="card-img-top rounded" alt="Mercedes-Benz amg AMG-GTR" style="width: 96%; height: 80%; margin: 5px;">
-                      <div class="card-body">
-                        <h5 class="card-title text-secondary h5-hov"><small>Mercedes-Benz amg AMG-GTR</small></h5>
-                        <p class="card-text text-white d-flex justify-content-center">Desde $152.000.000</p>
-                        <div class="d-flex justify-content-center">
-                          <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">cotizar</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </section>
-            </div>
-          </div>
-          <!-- footer -->
-          <div class="footer-container">
-          <div class="container bg-black px-5">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0">
-              
-            <div class="col mb-3">
-              <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <img src="img/Logo.png" alt="Logo" width="55px" height="37px">
-              </a>
-              <p class="text-secondary">© 2023-2024 CharlieCars Corp.</p>
-            </div>
-            <div class="col mb-3">
-              
-            </div>         
-            <div class="col mb-3">
-              <h5 class="text-warning">Marcas</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Aston Martin</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Cadillac</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Maserati</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Mini</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Porsche</a></li>
-              </ul>
-            </div>    
-            <div class="col mb-3">
-              <h5 class="text-warning">¿Necesitas Ayuda?</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Preguntas Frecuentes</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Reclamos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Agendar Mantención</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguros</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Canal de denuncias</a></li>
-              </ul>
-            </div>    
-            <div class="col mb-2">
-              <h5 class="text-warning">Nosotros</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Historia</a></li>
-                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguridad</a></li>
-                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Noticias</a></li>
-                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Contacto</a></li>
-                <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Términos y Condiciones</a></li>
-              </ul>
-            </div>
-          </footer>
-        </div>
-      </div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content bg-black">
-            <div class="modal-header border-secondary">
-              <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">AVISO</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!--Catalogo-->
+    <div class="mx-auto col-md-9 ps-5">
+      <section id="cards">
+        <div class="row justify-content-center bg-black">
+          <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+            <div>
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/Cadillac Escalade.png" class="card-img-top rounded" alt="Cadillac Escalade" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <div class="h5-container">
+                    <h5 class="card-title text-secondary h5-hov text-center"><small>Cadillac Escalade</small></h5>
+                    <p class="card-text text-white d-flex justify-content-center">Desde $140.000.000</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-body text-white">
-              Lo sentimos, página aún en desarrollo. 
+          </div>
+          <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+            <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+              <img src="img/img-autos-catalogo/AUDI.PNG" class="card-img-top rounded" alt="Audi RS7" style="width: 96%; height: 80%; margin: 5px;">
+              <div class="card-body">
+                <h5 class="card-title text-secondary h5-hov text-center"> <small>Audi RS7</small></h5>
+                <p class="card-text text-white d-flex justify-content-center">Desde $114.000.000</p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer border-secondary">
-              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/g wagon.avif" class="card-img-top rounded" alt="Mercedes G Wagon" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Mercedes G Wagon</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $210.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/lexus1.png" class="card-img-top rounded" alt="..." style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Lexus LC500</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $95.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/maserati1.png" class="card-img-top rounded" alt="Maserati Grant-Turismo" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Maserati Grant-Turismo</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $238.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/RollsRoyce1.png" class="card-img-top rounded" alt="RollsRoyce Phantom" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center">RollsRoyce Phantom</h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $627.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/Tesla1.png" class="card-img-top rounded" alt="Tesla Model S" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Tesla Model S</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $90.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem;">
+                <img src="img/img-autos-catalogo/BMW1.jpg" class="card-img-top rounded" alt="BMW M8 Competition" style="width: 96%; height:129px; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>BMW M8 Competition</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $57.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/Porsche.png" class="card-img-top rounded" alt="Porsche 911 gt3 rs" style="width: 96%; height: 90%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Porsche 911 gt3 rs</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $305.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/AstonMartin1.png" class="card-img-top rounded" alt="AstonMartin db12 vantage" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>AstonMartin db12 vantage</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $124.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/mini1.png" class="card-img-top rounded" alt="Mini Jhon Cooper Works" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Mini Jhon Cooper Works</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde  $41.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-5 col-xl-4">
+              <div class="card co-4 mt-4 mb-4 bg-black border-warning pt-2" style="width: 15rem; ">
+                <img src="img/img-autos-catalogo/AMG-GTR.png" class="card-img-top rounded" alt="Mercedes-Benz amg AMG-GTR" style="width: 96%; height: 80%; margin: 5px;">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary h5-hov text-center"><small>Mercedes-Benz AMG-GTR</small></h5>
+                  <p class="card-text text-white d-flex justify-content-center">Desde $152.000.000</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">cotizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </section>
+      </div>
+    </div>
+        <!-- footer -->
+    <div class="footer-container">
+      <div class="container bg-black px-5">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0">            
+          <div class="col mb-3">
+            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="img/Logo.png" alt="Logo" width="55px" height="37px">
+            </a>
+            <p class="text-secondary">© 2023-2024 CharlieCars Corp.</p>
+          </div>
+          <div class="col mb-3">
+            
+          </div>         
+          <div class="col mb-3">
+            <h5 class="text-warning">Marcas</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Aston Martin</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Cadillac</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Maserati</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Mini</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Porsche</a></li>
+            </ul>
+          </div>    
+          <div class="col mb-3">
+            <h5 class="text-warning">¿Necesitas Ayuda?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Preguntas Frecuentes</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Reclamos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Agendar Mantención</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Canal de denuncias</a></li>
+            </ul>
+          </div>    
+          <div class="col mb-2">
+            <h5 class="text-warning">Nosotros</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Historia</a></li>
+              <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Seguridad</a></li>
+              <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Noticias</a></li>
+              <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Contacto</a></li>
+              <li class="nav-item mb-2 me-2"><a href="#" class="nav-link p-0 text-secondary lista-a">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+      
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-black">
+          <div class="modal-header border-secondary">
+            <h1 class="modal-title fs-5 text-warning" id="exampleModalLabel">AVISO</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-white">
+            Lo sentimos, página aún en desarrollo. 
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
