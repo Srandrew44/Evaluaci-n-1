@@ -8,13 +8,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link rel="icon" type="image/jpg" href="img/Logo.png" />
     <style>
       * {
         scrollbar-color: #b99f48 black !important;
         scrollbar-width: thin;
+        font-family: monospace;
+        font-size: 16px;
       }
 
       .caja {
@@ -38,6 +39,8 @@
     </style>
   </head>
   <body class="bg-black">
+
+    <!-- REGISTRO -->
     <div class="container-lg caja">
       <div class="text-center">
         <h3 class="display-3 text-warning">Regístrate</h3>
@@ -54,19 +57,16 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-person-fill"
-                  viewBox="0 0 16 16"
-                >
+                  viewBox="0 0 16 16">
                   <path
-                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
-                  />
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                 </svg>
               </span>
               <input
                 type="text"
                 class="form-control no-shadow"
                 id="nombre"
-                placeholder="Ingresa tu nombre"
-              />
+                placeholder="Ingresa tu nombre"/>
             </div>
             <label for="apellido" class="form-label text-white"
               >Apellido:
@@ -79,19 +79,16 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-person-fill"
-                  viewBox="0 0 16 16"
-                >
+                  viewBox="0 0 16 16">
                   <path
-                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
-                  />
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                 </svg>
               </span>
               <input
                 type="text"
                 id="apellido"
                 class="form-control no-shadow"
-                placeholder="Ingresa tu apellido"
-              />
+                placeholder="Ingresa tu apellido"/>
             </div>
             <label for="email" class="form-label text-white"
               >Correo Electrónico:
@@ -104,19 +101,16 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-envelope-fill"
-                  viewBox="0 0 16 16"
-                >
+                  viewBox="0 0 16 16">
                   <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
-                  />
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
                 </svg>
               </span>
               <input
                 type="text"
                 id="email"
                 class="form-control no-shadow"
-                placeholder="correo@ejemplo.com"
-              />
+                placeholder="correo@ejemplo.com"/>
             </div>
             <label for="contraseña" class="form-label text-white"
               >Contraseña:
@@ -129,8 +123,7 @@
                   height="16"
                   fill="currentColor"
                   class="bi bi-circle-fill"
-                  viewBox="0 0 16 16"
-                >
+                  viewBox="0 0 16 16">
                   <circle cx="8" cy="8" r="8" />
                 </svg>
               </span>
@@ -138,16 +131,14 @@
                 type="password"
                 id="contraseña"
                 class="form-control no-shadow"
-                placeholder="Ingresa una constraseña"
-              />
+                placeholder="Ingresa una constraseña"/>
             </div>
             <div class="text-center my-3">
               <button
                 type="button"
                 class="btn btn-warning"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
+                data-bs-target="#exampleModal">
                 Registrar
               </button>
             </div>
@@ -155,17 +146,16 @@
         </div>
       </div>
     </div>
-    <!-- footer -->
+
+    <!-- FOOTER -->
     <div class="footer-container">
       <div class="container bg-black px-5">
         <footer
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0"
-        >
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-4 border-top-0">
           <div class="col mb-3">
             <a
               href="index.html"
-              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-            >
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
               <img src="img/Logo.png" alt="Logo" width="55px" height="37px" />
             </a>
             <p class="text-secondary">© 2023-2024 CharlieCars Corp.</p>
@@ -176,26 +166,22 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Aston Martin</a
-                >
+                  >Aston Martin</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Cadillac</a
-                >
+                  >Cadillac</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Maserati</a
-                >
+                  >Maserati</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a">Mini</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Porsche</a
-                >
+                  >Porsche</a>
               </li>
             </ul>
           </div>
@@ -204,28 +190,23 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Preguntas Frecuentes</a
-                >
+                  >Preguntas Frecuentes</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Reclamos</a
-                >
+                  >Reclamos</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Agendar Mantención</a
-                >
+                  >Agendar Mantención</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Seguros</a
-                >
+                  >Seguros</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Canal de denuncias</a
-                >
+                  >Canal de denuncias</a>
               </li>
             </ul>
           </div>
@@ -234,28 +215,23 @@
             <ul class="nav flex-column">
               <li class="nav-item mb-2 me-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Historia</a
-                >
+                  >Historia</a>
               </li>
               <li class="nav-item mb-2 me-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Seguridad</a
-                >
+                  >Seguridad</a>
               </li>
               <li class="nav-item mb-2 me-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Noticias</a
-                >
+                  >Noticias</a>
               </li>
               <li class="nav-item mb-2 me-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Contacto</a
-                >
+                  >Contacto</a>
               </li>
               <li class="nav-item mb-2 me-2">
                 <a href="#" class="nav-link p-0 text-secondary lista-a"
-                  >Términos y Condiciones</a
-                >
+                  >Términos y Condiciones</a>
               </li>
             </ul>
           </div>
@@ -263,13 +239,14 @@
       </div>
     </div>
 
+
+    <!-- MODAL -->
     <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content bg-black">
           <div class="modal-header border-0">
@@ -288,14 +265,12 @@
             <button
               type="button"
               class="btn btn-warning"
-              data-bs-dismiss="modal"
-            >
+              data-bs-dismiss="modal">
               <a
                 href="index.html"
                 class="text-dark"
                 style="text-decoration: none"
-                >Cerrar</a
-              >
+                >Cerrar</a>
             </button>
           </div>
         </div>
