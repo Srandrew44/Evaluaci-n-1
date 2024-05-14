@@ -288,8 +288,7 @@
         Al menos una letra mayúscula
         Al menos una letra minucula
         Al menos un dígito
-        No espacios en blanco
-        Al menos 1 caracter especial -->
+        No espacios en blanco-->
    <script>
     function validadoremail(email){
       var regexEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
@@ -302,7 +301,7 @@
       }
     }
     function validadorcontrasena(contrasena){
-      var regexcontrasena =  /^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[^A-Za-z0-9_])/
+      var regexcontrasena =  /^(?!\s).+(?<!\s)$/gm;
       if( regexcontrasena.test(contrasena) ){
         return true;
       }else{
@@ -318,42 +317,42 @@
         var formulariocorrecto = true
 
         if (nombre === ""){
-          $("#mensajenombre").text("El campo no puede estar vacio").css("color","red")
+          $("#mensajenombre").text("El campo no puede estar vacío").css("color","red")
           formulariocorrecto = false
         }
         else{
-          $("#mensajenombre").text("Campo completado con exito").css("color","green")
+          $("#mensajenombre").text("Campo completado con éxito").css("color","green")
         }
         if (apellido ===""){
-          $("#mensajeapellido").text("El campo no puede estar vacio").css("color","red")
+          $("#mensajeapellido").text("El campo no puede estar vacío").css("color","red")
           formulariocorrecto = false
         }
         else{
-          $("#mensajeapellido").text("Campo completado con exito").css("color","green")
+          $("#mensajeapellido").text("Campo completado con éxito").css("color","green")
         }
         if (email ===""){
-          $("#mensajecorreo").text("El campo no puede estar vacio").css("color","red")
+          $("#mensajecorreo").text("El campo no puede estar vacío").css("color","red")
           formulariocorrecto = false
         }
         else{
           if (validadoremail(email)){
-            $("#mensajecorreo").text("Campo completado con exito").css("color","green")
+            $("#mensajecorreo").text("Campo completado con éxito").css("color","green")
           }
           else{
-            $("#mensajecorreo").text("El correo no cumple con el estandar").css("color","red")
+            $("#mensajecorreo").text("El correo no cumple con el estándar").css("color","red")
             formulariocorrecto = false
           }
         }
         if (contrasena ===""){
-          $("#mensajecontrasena").text("El campo no puede estar vacio").css("color","red")
+          $("#mensajecontrasena").text("El campo no puede estar vacío").css("color","red")
           formulariocorrecto = false
         }
         else{
           if (validadorcontrasena(contrasena)){
-            $("#mensajecontrasena").text("Campo completado con exito").css("color","green")
+            $("#mensajecontrasena").text("Campo completado con éxito").css("color","green")
           }
           else{
-            $("#mensajecontrasena").text("La contraseña no cumple con el estandar").css("color","red")
+            $("#mensajecontrasena").text("La contraseña no cumple con el estándar").css("color","red")
             formulariocorrecto = false
           }
         }
