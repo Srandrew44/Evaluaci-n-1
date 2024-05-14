@@ -12,6 +12,7 @@
     <script>
       $(document).ready(function(){
         let carrito = $("#carrito");
+        let carritoItems = $("#carrito-items")
         let totalCompra = $("#total-items");
         let limpiar = $("#limpiar");
         let pagar = $(".pagar");
@@ -35,9 +36,13 @@
           return elemento;
         }
 
+        const formato = (numero) => {
+          return new Intl.NumberFormat('en-DE').format(numero)
+        }
+
         const total = (array) => {
           suma = array.map(number => Number(number.replace(".", ""))).reduce((a,b) => a + b, 0);
-          totalCompra.html(`Total: <strong class="text-warning">$${suma}</strong>`);
+          totalCompra.html(`Total: <strong class="text-warning">$${formato(suma)}</strong>`);
           return totalCompra;
         }
 
@@ -45,6 +50,7 @@
           if(array.length > 0){
             limpiar.removeAttr("disabled");
             pagar.removeAttr("disabled");
+            carritoItems.text(`${array.length}`)
           }
         }
 
@@ -52,6 +58,7 @@
           carrito.empty();
           array = [];
           totalCompra.html("Total: <strong class='text-warning' >$0</strong>");
+          carritoItems.text("0")
           limpiar.prop("disabled", true);
           pagar.prop("disabled", true);
         })
@@ -179,7 +186,7 @@
         width: 100%;
         position: absolute;
         bottom: 0;
-        left: 80px;
+        left: 30px;
         margin-bottom: 15px;
       }
 
@@ -247,7 +254,9 @@
                 class="ms-4"
                 src="img/shopping-cart.png"
                 alt="carrito de compras"
-                height="37px"/></a>
+                height="37px"/>
+                <span class="badge text-bg-warning text-black fs-6 fw-bolder" id="carrito-items">0</span>
+            </a>
           </form>
         </div>
       </div>
@@ -416,4 +425,3 @@
     ></script>
   </body>
 </html>
-      
